@@ -2,7 +2,7 @@
 -- Replace the placeholder with its UUID, then run from SQL Editor.
 -- Do not paste your password here or into a GitHub file.
 INSERT INTO brandizzo_private.admins(user_id)
-VALUES ('4eadaf4c-77bc-40ac-9e0c-3faa74902d71'::uuid)
+VALUES ('1f902b7f-998b-402f-babd-b83a3bc5fd8e'::uuid)
 ON CONFLICT DO NOTHING;
 
 -- To revoke permissions immediately, run in SQL Editor:
