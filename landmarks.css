@@ -1,0 +1,18 @@
+/* Neutral ivory/ink landmark pins, anchored on the small dot at ground level. */
+.landmark-marker{width:44px;height:62px;z-index:2;pointer-events:none}
+.landmark-marker[hidden]{display:none!important}
+.landmark-pin{display:block;width:44px;height:62px;padding:0;border:0;background:transparent;pointer-events:auto;cursor:pointer;filter:drop-shadow(0 2px 3px rgba(15,35,30,.24));touch-action:manipulation}
+.landmark-pin:active{transform:none}
+.landmark-pin:hover,.landmark-pin[aria-expanded="true"]{filter:drop-shadow(0 0 4px #fff) drop-shadow(0 2px 4px rgba(15,35,30,.35))}
+.landmark-pin:focus-visible{outline:3px solid #007aff;outline-offset:2px;border-radius:22px}
+.landmark-popup{z-index:6}
+.landmark-card-body{padding:15px 20px 19px;border-top:1px solid rgba(15,23,42,.08)}
+.landmark-card-body p{margin:0;color:#475467;font-size:13px;line-height:1.55}
+.landmark-card-body .landmark-address{font-weight:650;font-size:12px;color:#667085;margin-bottom:8px}
+.landmark-popup .civic-title{font-size:21px;line-height:1.2}
+@media(max-width:700px){
+ .landmark-popup .maplibregl-popup-content{max-height:calc(100dvh - 140px);overflow:auto;overscroll-behavior:contain}
+ .landmark-popup .civic-card{min-width:0;width:100%}
+ .landmark-popup .civic-card.has-crest .civic-card-head{min-height:175px;padding-top:96px!important}
+ .landmark-popup .civic-crest{max-height:74px}
+}
